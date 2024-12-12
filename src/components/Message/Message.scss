@@ -1,0 +1,39 @@
+@import '../../styles/_variables';
+
+.none{
+  opacity: 0.9;
+}
+.alert {
+  position: relative;
+  padding: .7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  font-size: 16px;
+  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: none;
+  padding: 0;
+  margin-bottom: 0;
+  height: 24px;
+}
+.message-text{
+  margin: 0px;
+}
+.my-danger{
+  color: rgb(194, 22, 22);
+}
+.my-success{
+  color: green;
+}
+@media (max-width: 850px){
+  .alert {
+    max-width: 90%;
+  }
+}
+@media (max-width: 550px){
+  .alert {
+    font-size: 0.7rem;
+    line-height: 14px;
+  }
+}

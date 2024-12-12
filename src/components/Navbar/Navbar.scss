@@ -1,0 +1,148 @@
+@import '../../styles/_variables';
+
+.navbar{
+  background-color:  $background-color-1;
+}
+.navbar-brand{
+  margin-right: 14%;
+  font-size: 1.5rem !important;
+  color: $color-1;
+}
+.navbar-brand:hover{
+  color: $color-2;
+}
+.navbar-collapse{
+  padding-right: 10px;
+}
+.navbar-nav{
+  padding-bottom: 7px;
+}
+.mr-auto{
+  margin-right: 0 !important;
+}
+.bg-light{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#logo{
+  max-width: 40px;
+}
+.navWrapper{
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.shoppingCart{
+  width: 20px;
+  padding-bottom: 5px;
+}
+.shoppingCard-quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 38px;
+  background-color: rgb(179, 236, 232);
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+}
+#shoppingCard-quantity{
+  font-size: 8px;
+}
+div.nav-link{
+  max-width: 80px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 3px;
+  color: rgba(0,0,0,.9);
+}
+.react-link{
+  max-width: 120px;
+}
+.nav-link{
+  max-width: 150px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 3px;
+}
+.nav-link:hover{
+  color:  $color-2;
+  text-decoration: underline;
+}
+#icon{
+  border: none;
+}
+#icon1{
+  padding-top: 10px;
+  border: none !important;
+}
+#auth{
+  width: 30px;
+  padding-bottom: 15px;
+}
+#navbarSupportedContent{
+  font-size: 1.2rem !important;
+}
+#navbarSupportedContent a:hover{
+  color: $color-2;
+  background-color: $background-color-1;
+}
+.dropdown-menu{
+  border: none !important;
+}
+#dropdownMenuNav{
+  background-color: $background-color-1;
+}
+#dropdownMenuNav div:hover{
+  text-decoration: none;
+  color: $color-2;
+}
+.about_us{
+  display: inline;
+}
+.country:hover{
+  color:  $color-2;
+  background-color: $background-color-1;
+}
+#Russia{
+  width: 20px;
+  margin-left: 15px
+}
+#USA{
+  width: 20px;
+  margin-left: 31px;
+}
+@media (max-width: 767px){
+  .navbar-brand{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem !important;
+    margin-right: 0;
+  }
+  a, div .add-font-size{
+    font-size: 1rem;
+  }
+  .react-link{
+    max-width: 70px;
+  }
+  .bg-light{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 576px){
+  .shoppingCart{
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+  #shoppingCart{
+    position: relative;
+    bottom: 5px;
+    left: 9px;
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../styles/_variables';
+
+.about{
+  background-color: $color-8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 441px)
+}
+.about_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+.about-img{
+  width: 180px;
+}
+.about_message{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.main_about{
+  color: $color-1;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+@media (max-width: 840px){
+  .about_wrapper{
+    max-width: 80%;
+  }
+}
+@media (max-width: 650px){
+  .about_message{
+    font-size: 1.5rem;
+  }
+  .main_about{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px){
+  .main_about{
+    font-size: 1.8rem;
+  }
+  .about_message_eng{
+    font-size: 2rem;
+  }
+}

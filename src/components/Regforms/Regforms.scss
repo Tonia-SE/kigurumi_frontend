@@ -1,0 +1,31 @@
+@import '../../styles/_variables';
+
+.okBtn{
+  background-color: $background-color-2;
+  border-color: $background-color-2;
+  color: $color-2;
+}
+.okBtn:hover,
+.okBtn:focus{
+  background-color: $color-2;
+  color: $background-color-2;
+}
+.confirmBtn{
+  background-color: $color-3;
+  border-color: $color-3;
+  color: $color-2;
+}
+.confirmBtn:hover,
+.confirmBtn:focus{
+  color: $color-3;
+  background-color: $color-2;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.modal-footer{
+  border-top: none;
+}
+.modal-header{
+  border-bottom: none;
+}

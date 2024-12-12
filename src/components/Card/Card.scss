@@ -1,0 +1,54 @@
+@import '../../styles/_variables';
+
+.card-bg-color{
+  background-color: $background-color-2
+}
+#sizeDroppdownMenu{
+  background-color: $background-color-4;
+}
+.sizeItem:hover{
+  background-color: $background-color-2;
+}
+.single-card{
+  width: 40%;
+}
+.single-card_img{
+  width: 67.5%;
+  margin: 0 auto;
+}
+.card-text p{
+  margin: 0px
+}
+.card_btn-sizes,
+.card_btn-buy{
+  max-width: 20vw;
+  height: 40px;
+  background-color: $color-2;
+}
+.card_btn-sizes:hover,
+.card_btn-sizes:focus,
+.card_btn-buy:hover{
+  background-color: $background-color-2;
+  color: $color-2;
+  font-weight: 400;
+  border-color: $background-color-2;
+}
+@media (max-width: 767px){
+  .cd-txt{
+    font-size: 1.3rem;
+  }
+  .single-card{
+    width: 65%;
+  }
+}
+@media (max-width: 480px){
+  .card_btn-sizes{
+    max-width: 40vw;
+  }
+  .my-padding{
+    padding: 0px 5px 0px 5px;
+  }
+  .single-card{
+    width: 80%;
+  }
+}

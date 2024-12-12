@@ -1,0 +1,153 @@
+@import '../../styles/_variables';
+
+.adult{
+  background-color: $background-color-1;
+}
+.kids{
+  background-color: $background-color-2;
+}
+.slippers{
+  background-color: $color-7;
+}
+.toys{
+  background-color: $color-6;
+}
+.title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page_wrapper{
+  display: flex;
+  justify-content: center;
+}
+.card-body{
+  padding: 20px 30px 20px 30px;
+}
+.card_btn-buy-adult,
+.card_btn-buy-slippers,
+.card_btn-buy-kids,
+.card_btn-buy-toys{
+  @include card-btn();
+  background-color: none;
+}
+.card_btn-buy-adult:hover,
+.card_btn-buy-adult:focus{
+  background-color: $background-color-1;
+  color: $color-2;
+  font-weight: 400;
+  border-color: $background-color-1;
+}
+.card_btn-buy-kids:hover,
+.card_btn-buy-kids:focus{
+  background-color: $background-color-2;
+  color: $color-2;
+  font-weight: 400;
+  border-color: $background-color-2;
+}
+.card_btn-buy-toys:hover,
+.card_btn-buy-toys:focus{
+  background-color: $color-6;
+  color: $color-2;
+  font-weight: 400;
+  border-color: $color-6;
+}
+.card_btn-buy-slippers:hover,
+.card_btn-buy-slippers:focus{
+  background-color:$color-7;
+  color: $color-2;
+  font-weight: 400;
+  border-color: $color-7;
+}
+#price{
+  font-size: 2.5rem;
+  color: #6c757d !important;
+}
+.card-text{
+  margin-top: 7px !important;
+  font-size: 1.5rem;
+}
+@media (max-width: 1200px){
+  .text{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 992px){
+  .btn-group .btn{
+    font-size: 12px;
+  }
+  .card-body{
+    padding: 15px;
+  }
+  #price{
+    font-size: 1.8rem;
+  }
+  .card-text{
+    margin-top: 0px !important;
+  }
+  .card-body{
+    padding-top: 0 !important;
+  }
+  .text{
+    font-size: 1rem;
+  }
+  .card_btn-BUY{
+    height: 30px;
+  }
+}
+@media (max-width: 801px) and (min-width: 767px){
+  .text{
+    font-size: 0.6rem;
+  }
+  .btn-sm{
+    font-size: 0.6rem;
+    padding: 2px 4px 2px 4px;
+  }
+  .card_btn-BUY{
+    height: 22px;
+  }
+}
+@media (max-width: 767px){
+  .col-md-4{
+    padding: 20px 50px;
+  }
+  .text{
+    font-size: 1.5rem !important;
+  }
+  .card_btn-BUY{
+    height: 40px;
+  }
+  .card-body{
+    padding: 20px 30px 20px 30px;
+  }
+}
+@media (max-width: 480px){
+  .card_btn-buy-adult,
+  .card_btn-buy-slippers,
+  .card_btn-buy-kids,
+  .card_btn-buy-toys{
+  @include card-btn();
+  background-color: none;
+  font-size: 12px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+  .card_btn-BUY{
+    max-width: 40vw;
+    height: 30px;
+    font-size: 10px !important;
+  }
+  .card-body{
+    padding: 20px;
+  }
+  .card-text{
+    font-size: 0.8rem !important;
+  }
+  .price{
+    font-size: 1rem;
+    margin-top: 10px
+  }
+  .mb-3 {
+    margin-bottom: 0px !important;
+  }
+}

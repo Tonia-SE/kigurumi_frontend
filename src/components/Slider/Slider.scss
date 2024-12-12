@@ -1,0 +1,21 @@
+@import '../../styles/_variables';
+
+.carousel-control-next, .carousel-control-prev{
+  max-width: 120px;
+  opacity: 0.9 !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  transform: scale(1.5, 2.5);
+} 
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+  transform: scale(2, 3);
+} 
+@media (max-width: 600px){
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    transform: scale(1.2, 1.8);
+  } 
+  .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+    transform: scale(1.4, 2.2);
+  } 
+}
+

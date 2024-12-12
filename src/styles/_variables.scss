@@ -1,0 +1,43 @@
+$background-color-1:  rgba(44, 138, 138, 1) !important;
+$background-color-2: #73bd49 !important;
+$background-color-3:  #9CEAEF !important;
+$background-color-4: rgb(224, 253, 245);
+$background-color-5: rgba(42, 163, 163, 0.3) !important;
+
+$color-1: rgb(33, 37, 41);
+$color-2: rgb(255, 255, 255) !important;
+$color-3: rgb(0, 123, 255) !important;
+$color-4: rgb(60, 201, 211) !important;
+$color-5: rgba(140, 230, 230, 0.3);
+$color-6: #f9c74f !important;
+$color-7: #f8961e !important;
+$color-8: #97c56c;
+$color-9: #e9adb7;
+$color-10: #dbf778;
+
+@mixin id_album(){
+    border-radius: 0;
+    border: none;
+    color: rgb(33, 37, 41);
+    outline: none;
+    margin: 0;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+@mixin center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin column(){
+    display: flex;
+    flex-direction: column;
+}
+@mixin card-btn(){
+    max-width: 20vw;
+    height: 40px;
+    color: $color-1;
+    padding-right: 17px;
+    padding-left: 17px;
+}

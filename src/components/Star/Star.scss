@@ -1,0 +1,27 @@
+@import '../../styles/_variables';
+
+.text-muted{
+  color: $color-6;
+  text-align: right !important;
+  font-size: 2.5rem ;
+}
+#star{
+  position: relative;
+  left: 80%;
+  top: 3%;
+  width: 10%;
+  cursor: pointer;
+}
+@media (max-width: 767px){
+  .text-muted{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px){
+  .text-muted{
+    font-size: 1.5rem;
+  }
+  #star{
+    left: 77%;
+  }
+}

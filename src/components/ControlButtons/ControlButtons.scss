@@ -1,0 +1,75 @@
+@import '../../styles/_variables';
+
+.col-4{
+  max-width: 25%;
+  height: 120px !important;
+}
+#adult{
+  background-color: $background-color-1;
+  @include id_album();
+  @include center();
+}
+#kids{
+  background-color: $background-color-2;
+  @include id_album();
+  @include center();
+}
+#slippers{
+  background-color: $color-7;
+  @include id_album();
+  @include center();
+}
+#toys{
+  background-color: $color-6;
+  @include id_album();
+  @include center();
+}
+#kids:hover, #kids:focus, #kids:active,
+#toys:hover, #toys:focus, #toys:active{
+  color: $color-2;
+}
+#adult:hover{
+  color: $color-2;
+}
+#slippers:hover{
+  color: $color-2;
+}
+.jc{
+  justify-content: space-between;
+  align-items: center;
+}
+button:hover, button:focus, button:visited, button:active{
+  box-shadow: none !important;
+  outline: none !important;
+  cursor: pointer;
+}
+small:hover, small:focus, small:visited, small:active, small:target{
+  cursor: pointer;
+}
+@media (max-width: 850px){
+  #adult, #kids, #slippers,
+  #toys{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px){
+  #adult, #kids, #slippers,
+  #toys{
+    font-size: 0.8rem;
+  }
+  .p-5{
+    padding: 25px !important;
+  }
+}
+@media (max-width: 600px){
+  #adult, #kids, #slippers,
+  #toys{
+    font-size: 0.7rem;
+  }
+  .col-4{
+    height: 90px !important;
+  }
+  .p-5{
+    padding: 15px !important;
+  }
+}

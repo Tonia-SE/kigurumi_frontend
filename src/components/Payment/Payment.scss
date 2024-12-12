@@ -1,0 +1,50 @@
+@import '../../styles/_variables';
+
+.payment{
+  background-color: $color-10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 441px);
+}
+.payment_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+.payment-img{
+  width: 130px;
+  margin-bottom: 20px;
+}
+.payment_message{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.main_payment{
+  color: $color-1;
+  font-size: 2.3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+@media (max-width: 840px){
+  .payment_wrapper{
+    max-width: 80%;
+  }
+}
+@media (max-width: 650px){
+  .payment_message{
+    font-size: 1.5rem;
+  }
+  .main_payment{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px){
+  .main_payment{
+    font-size: 1.8rem;
+  }
+  .payment_message_eng{
+    font-size: 2rem;
+  }
+}

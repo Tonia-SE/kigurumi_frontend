@@ -1,0 +1,36 @@
+@import '../components/Album/Album.scss';
+@import '../components/Card/Card.scss';
+@import '../components/ControlButtons/ControlButtons.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/Navbar/Navbar.scss';
+@import '../components/Regforms/Regforms.scss';
+@import '../components/ShoppingCart/ShoppingCart.scss';
+@import '../components/Slider/Slider.scss';
+@import '../components/Message/Message.scss'; 
+@import '../components/Spinner/Spinner.scss';
+@import '../components/Star/Star.scss';
+@import '../components/Delivery/Delivery.scss';
+@import '../components/Warranty/Warranty.scss';
+@import '../components/Payment/Payment.scss';
+@import '../components/About/About.scss';
+@import '../components/OrderDailog/OrderDailog.scss';
+@import '../components/Profile/Profile.scss';
+
+body{
+  margin: 0 auto;
+}
+p{
+  margin-bottom: 0 !important
+}
+@media (min-width: 1200px){
+  .body{
+      width: 1199px;
+      margin: 0 auto;
+      background-color: $background-color-5;
+  }
+}
+@media (max-width: 1199px){
+  .body{
+      background-color: $background-color-5;
+  }
+}
